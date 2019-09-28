@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/buttonsItemChild"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/buttonsItemChild"
+        android:text="Вчера"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/weekday"
+        android:text="Задач нет"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/progressBar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="7dp"
+        android:text="0%"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/buttonsItemAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/newAddTaskInDay"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_add_black_24dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsItemChild"
+        android:layout_alignEnd="@id/buttonsItemAdd"
+        android:layout_alignStart="@id/weekday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="29dp" />
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_below="@id/progressBar"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/viewLine"
+        app:ael_duration = "250"
+        app:ael_expanded = "true">
+
+        <TextView
+            android:id="@+id/numOfTask"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="0 задачи"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewChild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+</RelativeLayout>

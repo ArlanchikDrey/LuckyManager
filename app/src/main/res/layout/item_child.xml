@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textViewChild"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:buttonTint="#595959"
+       />
+
+    <TextView
+        android:id="@+id/textTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:layout_toEndOf="@id/buttonCheck"
+        android:layout_marginLeft="6dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/textTask"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+
+
+</RelativeLayout>

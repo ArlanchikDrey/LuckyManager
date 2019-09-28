@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "460205983105",
+    "firebase_url": "https://luckymanager-ed605.firebaseio.com",
+    "project_id": "luckymanager-ed605",
+    "storage_bucket": "luckymanager-ed605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460205983105:android:7596efbc47afb229",
+        "android_client_info": {
+          "package_name": "com.arlanov.taskplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460205983105-09pc7ump464ej2rvhrs6n73nmfa61g4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arlanov.taskplanner",
+            "certificate_hash": "fcf83d07deff69a343000e509e887ccc00ec39b3"
+          }
+        },
+        {
+          "client_id": "460205983105-pa5eeibrgh3s42ut0q31r5jnv0d4k44q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EZJdlKdO38IPRb9VLshEMKDWTWCVtTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460205983105-pa5eeibrgh3s42ut0q31r5jnv0d4k44q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
